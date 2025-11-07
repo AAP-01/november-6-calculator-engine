@@ -29,3 +29,23 @@ hard-coded into the method.
 
 25. Whenever I call testAll(), that method seems to affect the result of both testPlus() and 
 testMinus(). Doing some back-and-forth calling can make both tests return the correct answer.
+
+26.
+Method Called: initial state, numberPressed(4)
+displayValue: 0, 4, -4
+leftOperand: 0, 0, 0
+previousOperator: ' ', ' ', ' '
+
+Calling numberPressed(4) returns 4 as the displayValue, equals() does left operand - disyplayValue, 
+and getDisplayValue() returns -4..
+
+27. It felt a bit off when calling equals() as it made leftOperand - number, when leftOperand has 
+a value of 0. It would essentially mean 0-4.
+
+28.
+Method Called: initial state, numberPressed(4), clear()
+displayValue: 0, 4, -4, 0
+leftOperand: 0, 0, 0 , 0
+previousOperator: ' ', ' ', ' ', ' '
+
+clear() sets displayValue to 0.
